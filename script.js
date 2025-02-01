@@ -4,8 +4,8 @@ const photoLink = document.getElementById('photo-link');
 const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 const dateDisplay = document.getElementById('date-display');
-const switchIcon1 = document.getElementById('switch-icon-1');
-const switchIcon2 = document.getElementById('switch-icon-2');
+/*const switchIcon1 = document.getElementById('switch-icon-1');
+const switchIcon2 = document.getElementById('switch-icon-2');*/
 const listSwitch = document.getElementById('list-switch'); // Added list switch container
 
 // Sample photo lists (replace with your actual data)
@@ -18,7 +18,6 @@ const photoLists = [
         ]
     },
     {
-        date: "2023-11-15",
         photos: [
             { url: "https://placebear.com/800/600", link: "https://www.example.com/bear1", date: "2023" },
             { url: "https://placebear.com/700/500", link: "https://www.example.com/bear2", date: "2024" },
@@ -43,11 +42,22 @@ function updatePhoto() {
     rightArrow.classList.toggle('hidden', currentPhotoIndex === currentList.photos.length - 1);
 }
 
-function switchList() {
-    currentListIndex = (currentListIndex + 1) % photoLists.length;
-    currentPhotoIndex = photoLists[0].photos.length - 1; // Reset photo index when switching lists
-    updatePhoto();
-}
+// Add an event listener for the 'change' event
+listSwitch.addEventListener('change', function() {
+    if (this.checked) {
+      // Switch to the next list when switch is ON
+      currentListIndex = (currentListIndex + 1) % photoLists.length;
+      currentPhotoIndex = photoLists[0].photos.length - 1; // reset to the first image of a list, not to the last
+      updatePhoto();
+
+    } else {
+      // Switch to the previous list when switch is OFF
+      currentListIndex = (currentListIndex - 1 + photoLists.length) % photoLists.length;
+      currentPhotoIndex = photoLists[0].photos.length - 1; //reset to the first image of a list, not to the last
+      updatePhoto();
+    }
+});
+
 
 function navigatePhoto(direction) {
     const currentList = photoLists[currentListIndex];

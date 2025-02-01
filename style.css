@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: system-ui;
+    width: 95vw;
+    height: 95vh;
+}
+
+header {
+    display: flex;
+	flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#date-display {
+    font-size: 1.2em;
+	margin-top: 3.4vh;
+}
+
+#list-switch {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+	margin-right: 3vw;
+}
+
+.switch-icon {
+    width: 4.5vw;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.switch-icon.hidden {
+    display: none;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+#photo-container {
+    position: relative;
+    width: 75vw;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-photo {
+    max-width: 70vh;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    cursor: pointer;
+    user-select: none;
+    padding: 1vw;
+    color: #333;  
+}
+
+.left-arrow {
+    left: 17vw;
+}
+
+.right-arrow {
+    right: 17vw;
+}
+
+.arrow.hidden {
+    visibility: hidden;
+}

@@ -48,22 +48,35 @@ main {
 }
 
 .arrow {
-    position: absolute;
+	border-style: solid;
+	border-width: 0.05em 0.05em 0 0;
+	content: '';
+	display: inline-block;
+	height: 0.95em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+	width: 0.95em;
+    /*position: absolute;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2em;
+    padding: 1vw;
+    color: #333;*/  
     cursor: pointer;
     user-select: none;
-    padding: 1vw;
-    color: #333;  
 }
 
 .left-arrow {
     left: 17vw;
+	transform: rotate(-135deg);
 }
 
 .right-arrow {
     right: 17vw;
+	transform: rotate(45deg);
 }
 
 .arrow.hidden {

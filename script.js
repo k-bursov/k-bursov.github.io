@@ -54,7 +54,7 @@ listSwitch.addEventListener('change', function() {
     } else {
       // Switch to the previous list when switch is OFF
       currentListIndex = (currentListIndex - 1 + photoLists.length) % photoLists.length;
-      currentPhotoIndex = photoLists[0].photos.length - 1; //reset to the first image of a list, not to the last
+      currentPhotoIndex = photoLists[1].photos.length - 1; //reset to the first image of a list, not to the last
       updatePhoto();
     }
 });

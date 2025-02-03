@@ -11,14 +11,15 @@ const listSwitch = document.getElementById('list-switch'); // Added list switch 
 // Sample photo lists (replace with your actual data)
 const photoLists = [
     {
-        photos: [
-            { url: "https://sun9-66.userapi.com/impg/Jj8V7fNEK2O0zA7OW0BVs0BnBj1wBPxZCl8n0g/kh5JXSoi6kI.jpg?size=613x480&quality=95&sign=bbec4a47b59c6eaa39789bf7624394b9&type=album", link: "https://www.example.com/kitten1", date: "2023" },
-            { url: "https://sun9-22.userapi.com/impg/M7WPFge5jZ08kBThx8Un6reFTe7rHeD8-qvtQg/-IJ0GNDtd3I.jpg?size=2560x2560&quality=95&sign=96dbe468eb791d7238c475807df30500&type=album", link: "https://www.example.com/kitten2", date: "2024" },
-            { url: "https://sun9-41.userapi.com/impg/YN3RkTMtSj4wRuEFLOCqb-0nIRAZrNF9Vy_8hQ/lwuKm1jCQQ0.jpg?size=640x640&quality=95&sign=7ca8371417f3a8ea20e008a359261de5&type=album", link: "https://www.example.com/kitten3", date: "2025" }
+        photos: [ // academic
+            { url: "https://i.postimg.cc/524ymdVK/IMG-20191121-164351-362.jpg", link: "https://artesliberales.spbu.ru/ru/education/rezultat-obucheniya/bursov", date: "2019" },
+            { url: "https://i.postimg.cc/qv1RbbBJ/graduation.jpg", link: "https://diploma.spbu.ru/gp/view?id=33486", date: "2021" },
+            { url: "https://i.postimg.cc/25J5m1Bg/virtualcoglab2023.jpg", link: "https://conf.virtualcoglab.ru/2023/Proceedings/pdf/BursovSlyusarMoscowCogSci2023.pdf", date: "2023" },
+            { url: "https://i.postimg.cc/PrkPPvFj/art1.png", link: "https://muse.jhu.edu/article/923075", date: "2023" }
         ]
     },
     {
-        photos: [
+        photos: [ // personal
             { url: "https://placebear.com/800/600", link: "https://www.example.com/bear1", date: "2023" },
             { url: "https://placebear.com/700/500", link: "https://www.example.com/bear2", date: "2024" },
             { url: "https://placebear.com/600/400", link: "https://www.example.com/bear3", date: "2025" }

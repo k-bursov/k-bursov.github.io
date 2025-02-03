@@ -53,18 +53,17 @@ main {
 	content: '';
 	display: inline-block;
 	height: 0.95em;
-	left: 0.15em;
-	position: relative;
-	top: 0.15em;
+	/*left: 0.15em;*/ 
+	position: absolute;
 	transform: rotate(-45deg);
-	vertical-align: top;
+	/*vertical-align: top;*/ 
 	width: 0.95em;
-    /*position: absolute;
     top: 50%;
+    /*position: absolute;
     transform: translateY(-50%);
     font-size: 2em;
-    padding: 1vw;
-    color: #333;*/  
+    padding: 1vw;*/
+    color: #757575;
     cursor: pointer;
     user-select: none;
 }

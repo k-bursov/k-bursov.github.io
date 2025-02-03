@@ -12,6 +12,7 @@ const listSwitch = document.getElementById('list-switch'); // Added list switch 
 const photoLists = [
     {
         photos: [ // academic
+            { url: "https://i.postimg.cc/zXS3WD9R/AOLk-r-IGbf-M.jpg", date: "2015/2019" },
             { url: "https://i.postimg.cc/524ymdVK/IMG-20191121-164351-362.jpg", link: "https://artesliberales.spbu.ru/ru/education/rezultat-obucheniya/bursov", date: "2019" },
             { url: "https://i.postimg.cc/qv1RbbBJ/graduation.jpg", link: "https://diploma.spbu.ru/gp/view?id=33486", date: "2021" },
             { url: "https://i.postimg.cc/25J5m1Bg/virtualcoglab2023.jpg", link: "https://conf.virtualcoglab.ru/2023/Proceedings/pdf/BursovSlyusarMoscowCogSci2023.pdf", date: "2023" },
@@ -20,9 +21,8 @@ const photoLists = [
     },
     {
         photos: [ // personal
-            { url: "https://placebear.com/800/600", link: "https://www.example.com/bear1", date: "2023" },
-            { url: "https://placebear.com/700/500", link: "https://www.example.com/bear2", date: "2024" },
-            { url: "https://placebear.com/600/400", link: "https://www.example.com/bear3", date: "2025" }
+            { url: "https://i.postimg.cc/x15wLBfR/Beyond.jpg", link: "", date: "2016" },
+            { url: "https://i.postimg.cc/zvWmWBvb/Cover.jpg", link: "https://links.freshtunes.com/ud03w", date: "2021" }
         ]
     }
 ];

@@ -1,13 +1,14 @@
 body {
-    margin: 0;
-    	padding-top: 2vh;
+    	margin: 0;
+    	padding: 0;
 	background-color: white;
 	font-family: system-ui;
-    width: 98%;
+    	width: 98%;
     /*height: 95vh;*/
 }
 
 header {
+	padding-top: 2vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;

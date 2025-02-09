@@ -51,7 +51,6 @@ main {
 	content: '';
 	display: inline-block;
 	height: 0.95em;
-	/*left: 0.15em;*/ 
 	position: absolute;
 	transform: rotate(-45deg);
 	/*vertical-align: top;*/ 
@@ -67,12 +66,12 @@ main {
 }
 
 .left-arrow {
-    left: 17vw;
+    	left: -4vw;
 	transform: rotate(-135deg);
 }
 
 .right-arrow {
-    right: 17vw;
+    	right: -4vw;
 	transform: rotate(45deg);
 }
 

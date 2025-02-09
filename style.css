@@ -42,8 +42,8 @@ main {
 }
 
 #main-photo {
-    /*max-width: 70vh;
-    max-height: 70vh;*/
+    max-width: 70%;
+    /*max-height: 70vh;*/
     object-fit: contain;
 }
 

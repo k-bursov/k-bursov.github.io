@@ -8,9 +8,9 @@ body {
 }
 
 header {
-    display: flex;
+	display: flex;
 	flex-direction: row;
-    justify-content: space-evenly;
+	justify-content: space-around;
 }
 
 #date-display {

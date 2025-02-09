@@ -41,12 +41,6 @@ main {
     align-items: center;
 }
 
-#main-photo {
-    max-width: 70%;
-    /*max-height: 70vh;*/
-    object-fit: contain;
-}
-
 .arrow {
 	border-style: solid;
 	border-width: 0.05em 0.05em 0 0;
@@ -79,6 +73,12 @@ main {
 
 .arrow.hidden {
     visibility: hidden;
+}
+
+#main-photo {
+    max-width: 70%;
+    /*max-height: 70vh;*/
+    object-fit: contain;
 }
 
 /* Switch Styles */

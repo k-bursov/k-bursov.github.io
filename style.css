@@ -32,8 +32,8 @@ main {
 
 #photo-container {
     position: relative;
-    /*width: 75vw;
-    height: 75vh;*/
+    width: 70vw;
+    /*height: 75vh;*/
     display: flex;
     justify-content: center;
     align-items: center;

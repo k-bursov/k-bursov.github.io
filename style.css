@@ -1,9 +1,9 @@
 body {
     margin: 0;
-    	padding: 2vh;
+    	padding-top: 2vh;
 	background-color: white;
 	font-family: system-ui;
-    width: 100%;
+    width: 98%;
     /*height: 95vh;*/
 }
 

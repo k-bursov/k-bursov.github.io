@@ -83,6 +83,13 @@ function toggleSwitchIcon() {
 
 // Event listeners
 leftArrow.addEventListener('click', () => navigatePhoto('left'));
+window.addEventListener('keydown', event => {
+  if (event.key == "ArrowLeft") {
+    navigatePhoto('left');
+  } else if (event.key == "ArrowRight") {
+    navigatePhoto('right');
+  }
+})
 rightArrow.addEventListener('click', () => navigatePhoto('right'));
 listSwitch.addEventListener('click', () => {
     switchList();

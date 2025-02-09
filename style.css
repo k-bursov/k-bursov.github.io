@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    	padding: 1vh;
+    	padding: 2vh;
 	background-color: white;
 	font-family: system-ui;
     width: 100%;
@@ -10,12 +10,12 @@ body {
 header {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 
 #date-display {
 	font-size: 1.2em;
-	margin-bottom: 1vh;
+	margin-top: 1vh;
 }
 
 #list-switch {

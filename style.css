@@ -27,16 +27,17 @@ header {
 }
 
 main {
-	min-height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 #photo-container {
+	min-height: 80%;
+	min-width: 80%;
     position: relative;
     width: 50%;
-	height: 60%;
+	height: 60%;/**/
     align-items: center;
     display: flex;
     justify-content: center;

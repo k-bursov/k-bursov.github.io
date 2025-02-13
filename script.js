@@ -4,8 +4,7 @@ const photoLink = document.getElementById('photo-link');
 const leftArrow = document.getElementById('left-arrow');
 const rightArrow = document.getElementById('right-arrow');
 const dateDisplay = document.getElementById('date-display');
-/*const switchIcon1 = document.getElementById('switch-icon-1');
-const switchIcon2 = document.getElementById('switch-icon-2');*/
+const page = document.getElementsByTagName('html')[0];
 const listSwitch = document.getElementById('list-switch'); // Added list switch container
 
 // Sample photo lists (replace with your actual data)
@@ -95,6 +94,44 @@ listSwitch.addEventListener('click', () => {
     switchList();
     toggleSwitchIcon();
 });
+
+// Swipes
+page.addEventListener('touchstart', function (event) {
+    touchstartX = event.changedTouches[0].screenX;
+    touchstartY = event.changedTouches[0].screenY;
+}, false);
+
+page.addEventListener('touchend', function (event) {
+    touchendX = event.changedTouches[0].screenX;
+    touchendY = event.changedTouches[0].screenY;
+    handleGesture();
+}, false);
+
+
+function handleGesture() {
+    if (touchendX < touchstartX) {
+        console.log('Swiped Right');
+		navigatePhoto('right');
+    }
+
+    if (touchendX > touchstartX) {
+        console.log('Swiped Left');
+		navigatePhoto('left');
+    }
+
+    if (touchendY < touchstartY) {
+        console.log('Swiped Up');
+    }
+
+    if (touchendY > touchstartY) {
+        console.log('Swiped Down');
+    }
+
+    if (touchendY === touchstartY) {
+        console.log('Tap');
+    }
+}
+
 
 // Initial setup
 updatePhoto();

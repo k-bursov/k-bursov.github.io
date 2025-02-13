@@ -7,14 +7,14 @@ const dateDisplay = document.getElementById('date-display');
 const page = document.getElementsByTagName('html')[0];
 const listSwitch = document.getElementById('list-switch'); // Added list switch container
 
-// Sample photo lists (replace with your actual data)
 const photoLists = [
     {
         photos: [ // academic
             { url: "https://i.postimg.cc/zXS3WD9R/AOLk-r-IGbf-M.jpg", date: "2015/2019" },
             { url: "https://i.postimg.cc/524ymdVK/IMG-20191121-164351-362.jpg", link: "https://artesliberales.spbu.ru/ru/education/rezultat-obucheniya/bursov", date: "2019" },
             { url: "https://i.postimg.cc/qv1RbbBJ/graduation.jpg", link: "https://diploma.spbu.ru/gp/view?id=33486", date: "2021" },
-            { url: "https://i.postimg.cc/25J5m1Bg/virtualcoglab2023.jpg", link: "https://conf.virtualcoglab.ru/2023/Proceedings/pdf/BursovSlyusarMoscowCogSci2023.pdf", date: "2023" },
+            { url: "https://i.postimg.cc/DZCmy7xx/IMG-20220921-160704.jpg", link: "https://ihb.spb.ru/science/divisions/cognitive-psychology-and-psychophysiology", date: "2022" },
+            { url: "https://i.postimg.cc/4ymyYjMs/IMG-20230622-111301.jpg", link: "https://conf.virtualcoglab.ru/2023/Proceedings/pdf/BursovSlyusarMoscowCogSci2023.pdf", date: "2023" },
             { url: "https://i.postimg.cc/PrkPPvFj/art1.png", link: "https://muse.jhu.edu/article/923075", date: "2023" }
         ]
     },

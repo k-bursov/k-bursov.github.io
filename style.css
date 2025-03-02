@@ -1,18 +1,21 @@
-body {
-    	margin: 0;
-    	padding: 0;
-	background-color: white;
-	font-family: system-ui;
-    	width: 98%;
-    /*height: 95vh;*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
-
+body {
+    background-color: white;
+    font-family: system-ui;
+    width: 100%;
+	display: flex;
+	flex-direction: column;
+}
 header {
-	padding-top: 2%;
-	padding-bottom: 2%;
+	padding-top: 1.5vh;
+	padding-bottom: 5vh;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-evenly;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -30,18 +33,16 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+	/*flex-grow: 1;*/
 }
 
 #photo-container {
-	min-height: 80%;
-	min-width: 80%;
     position: relative;
-    width: 50%;
-	height: 60%;/**/
-    align-items: center;
+	max-width: 80vw;   
+    max-height: 80vh;   
     display: flex;
     justify-content: center;
-	object-fit: contain;
+    align-items: center;
 }
 
 .arrow {
@@ -65,12 +66,12 @@ main {
 }
 
 .left-arrow {
-    	left: -4vw;
+    	left: -7vw;
 	transform: rotate(-135deg);
 }
 
 .right-arrow {
-    	right: -4vw;
+    	right: -7vw;
 	transform: rotate(45deg);
 }
 
@@ -79,10 +80,9 @@ main {
 }
 
 #main-photo {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 85vw;
+    max-height: 85vh;
     object-fit: contain;
-	align-content: center;
 }
 
 /* Switch Styles */

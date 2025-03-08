@@ -42,20 +42,18 @@ function updatePhoto() {
     rightArrow.classList.toggle('hidden', currentPhotoIndex === currentList.photos.length - 1);
 }
 
-// Add an event listener for the 'change' event
 listSwitch.addEventListener('change', function() {
     if (this.checked) {
       // Switch to the next list when switch is ON
       currentListIndex = (currentListIndex + 1) % photoLists.length;
-      currentPhotoIndex = photoLists[0].photos.length - 1; // reset to the first image of a list, not to the last
-      updatePhoto();
+      currentPhotoIndex = photoLists[currentListIndex].photos.length - 1;
 
     } else {
       // Switch to the previous list when switch is OFF
       currentListIndex = (currentListIndex - 1 + photoLists.length) % photoLists.length;
-      currentPhotoIndex = photoLists[1].photos.length - 1; //reset to the first image of a list, not to the last
-      updatePhoto();
+      currentPhotoIndex = photoLists[currentListIndex].photos.length - 1;
     }
+	updatePhoto();
 });
 
 
@@ -109,13 +107,13 @@ page.addEventListener('touchend', function (event) {
 
 
 function handleGesture() {
-    if (touchendX < touchstartX) {
-        console.log('Swiped Right');
+    if (touchendX < touchstartX && touchstartX/touchendX > 1.2) {
+		console.log('Swiped Right');
 		navigatePhoto('right');
     }
 
-    if (touchendX > touchstartX) {
-        console.log('Swiped Left');
+    if (touchendX > touchstartX && touchendX/touchstartX > 1.2) {
+		console.log('Swiped Left');
 		navigatePhoto('left');
     }
 

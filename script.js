@@ -107,12 +107,12 @@ page.addEventListener('touchend', function (event) {
 
 
 function handleGesture() {
-    if (touchendX < touchstartX && touchstartX/touchendX > 1.2) {
+    if (touchendX < touchstartX && touchstartX/touchendX > 1.25) {
 		console.log('Swiped Right');
 		navigatePhoto('right');
     }
 
-    if (touchendX > touchstartX && touchendX/touchstartX > 1.2) {
+    if (touchendX > touchstartX && touchendX/touchstartX > 1.25) {
 		console.log('Swiped Left');
 		navigatePhoto('left');
     }

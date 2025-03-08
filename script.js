@@ -10,7 +10,7 @@ const listSwitch = document.getElementById('list-switch'); // Added list switch 
 const photoLists = [
     {
         photos: [ // academic
-            { url: "https://i.postimg.cc/zXS3WD9R/AOLk-r-IGbf-M.jpg", date: "2015/2019" },
+            { url: "https://i.postimg.cc/zXS3WD9R/AOLk-r-IGbf-M.jpg", link: "", date: "2015/2019" },
             { url: "https://i.postimg.cc/524ymdVK/IMG-20191121-164351-362.jpg", link: "https://artesliberales.spbu.ru/ru/education/rezultat-obucheniya/bursov", date: "2019" },
             { url: "https://i.postimg.cc/qv1RbbBJ/graduation.jpg", link: "https://diploma.spbu.ru/gp/view?id=33486", date: "2021" },
             { url: "https://i.postimg.cc/DZCmy7xx/IMG-20220921-160704.jpg", link: "https://ihb.spb.ru/science/divisions/cognitive-psychology-and-psychophysiology", date: "2022" },

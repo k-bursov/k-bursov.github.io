@@ -33,14 +33,22 @@ let isIcon1Visible = true; // Track which icon is visible
 function updatePhoto() {
     const currentList = photoLists[currentListIndex];
     const currentPhoto = currentList.photos[currentPhotoIndex];
-    mainPhoto.src = currentPhoto.url;
-    photoLink.href = currentPhoto.link;
-    dateDisplay.textContent = currentPhoto.date;
+    mainPhoto.classList.add('loading'); // loading css
+	
+	const img = new Image();
+	  img.onload = () => {
+		mainPhoto.src = currentPhoto.url;  // set the real image
+		mainPhoto.classList.remove('loading'); // remove the loading class
+		photoLink.href = currentPhoto.link;
+		dateDisplay.textContent = currentPhoto.date;
+	  };
+	img.src = currentPhoto.url; // Start loading the actual image	
 
     // Hide arrows if at the end of the list
     leftArrow.classList.toggle('hidden', currentPhotoIndex === 0);
     rightArrow.classList.toggle('hidden', currentPhotoIndex === currentList.photos.length - 1);
 }
+
 
 listSwitch.addEventListener('change', function() {
     if (this.checked) {

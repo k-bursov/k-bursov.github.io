@@ -15,7 +15,8 @@ const photoLists = [
             { url: "https://i.postimg.cc/qv1RbbBJ/graduation.jpg", link: "https://diploma.spbu.ru/gp/view?id=33486", date: "2021" },
             { url: "https://i.postimg.cc/DZCmy7xx/IMG-20220921-160704.jpg", link: "https://ihb.spb.ru/science/divisions/cognitive-psychology-and-psychophysiology", date: "2022" },
             { url: "https://i.postimg.cc/4ymyYjMs/IMG-20230622-111301.jpg", link: "https://conf.virtualcoglab.ru/2023/Proceedings/pdf/BursovSlyusarMoscowCogSci2023.pdf", date: "2023" },
-            { url: "https://i.postimg.cc/PrkPPvFj/art1.png", link: "https://muse.jhu.edu/article/923075", date: "2023" }
+            { url: "https://i.postimg.cc/PrkPPvFj/art1.png", link: "https://muse.jhu.edu/article/923075", date: "2023" },
+            { url: "https://i.postimg.cc/VLhRC7f8/art2.png", link: "https://doi.org/10.1080/0163853X.2025.2478800", date: "2025" }
         ]
     },
     {

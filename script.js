@@ -21,7 +21,7 @@ const photoLists = [
     },
     {
         photos: [ // personal
-            { url: "https://i.postimg.cc/x15wLBfR/Beyond.jpg", link: "", date: "2016" },
+            { url: "https://i.postimg.cc/x15wLBfR/Beyond.jpg", link: "https://links.freshtunes.com/UlrRp", date: "2016" },
             { url: "https://i.postimg.cc/zvWmWBvb/Cover.jpg", link: "https://links.freshtunes.com/ud03w", date: "2021" }
         ]
     }

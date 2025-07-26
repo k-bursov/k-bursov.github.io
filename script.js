@@ -32,9 +32,42 @@ let currentListIndex = 0;
 let currentPhotoIndex = photoLists[0].photos.length - 1;
 let isIcon1Visible = true; // Track which icon is visible
 
+// Create and append loading overlay with spinner
+const loadingOverlay = document.createElement('div');
+loadingOverlay.id = 'loading-overlay';
+loadingOverlay.style.position = 'absolute';
+loadingOverlay.style.top = '0';
+loadingOverlay.style.left = '0';
+loadingOverlay.style.width = '100%';
+loadingOverlay.style.height = '100%';
+loadingOverlay.style.backgroundColor = 'rgba(255, 255, 255, 0.7)';
+loadingOverlay.style.display = 'flex';
+loadingOverlay.style.alignItems = 'center';
+loadingOverlay.style.justifyContent = 'center';
+loadingOverlay.style.zIndex = '10';
+loadingOverlay.style.display = 'none'; // hidden by default
+
+// Create spinner element matching your CSS spinner style
+const spinner = document.createElement('div');
+spinner.style.width = '40px';
+spinner.style.height = '40px';
+spinner.style.borderRadius = '50%';
+spinner.style.border = '2px solid #ccc';
+spinner.style.borderTopColor = '#6e7478'; // Primary color for spinner
+spinner.style.animation = 'spin 1s linear infinite';
+
+// Append spinner to loading overlay
+loadingOverlay.appendChild(spinner);
+
+// Ensure photoContainer is positioned relatively for overlay positioning
+photoContainer.style.position = 'relative';
+photoContainer.appendChild(loadingOverlay);
+
 function updatePhoto() {
     const currentList = photoLists[currentListIndex];
     const currentPhoto = currentList.photos[currentPhotoIndex];
+
+    loadingOverlay.style.display = 'flex'; // Show loading overlay
     mainPhoto.classList.add('loading'); // loading css
 	
 	const img = new Image();
@@ -43,7 +76,13 @@ function updatePhoto() {
 		mainPhoto.classList.remove('loading'); // remove the loading class
 		photoLink.href = currentPhoto.link;
 		dateDisplay.textContent = currentPhoto.date;
+        	loadingOverlay.style.display = 'none'; // Hide loading overlay after load
 	  };
+    	img.onerror = () => {
+     		// Hide loading overlay on error and optionally handle error display
+        	loadingOverlay.style.display = 'none';
+        	mainPhoto.classList.remove('loading');
+    	}
 	img.src = currentPhoto.url; // Start loading the actual image	
 
     // Hide arrows if at the end of the list

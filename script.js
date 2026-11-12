@@ -19,7 +19,7 @@ const photoLists = [
             { url: "https://i.postimg.cc/fy7cp792/art2.png", link: "https://doi.org/10.1080/0163853X.2025.2478800", date: "2025" },
             { url: "https://i.postimg.cc/Fzsc8fhW/230-BAE68-1-FA4-400-B-A64-B-184078-B605-C9-1-105-c.jpg", link: "https://easychair.org/smart-program/STD2025/2025-07-10.html#talk:281530", date: "2025" },
             { url: "https://i.postimg.cc/g0016XMc/art3.png", link: "https://doi.org/10.1016/j.bandl.2026.105719", date: "2026" },
-            { url: "https://i.postimg.cc/L5fC4hyp/IMG-20260614-154021.jpg", link: "https://www.hse.ru/staff/kirill.bursov", date: "2026" },
+            { url: "https://i.postimg.cc/L5fC4hyp/IMG-20260614-154021.jpg", link: "https://www.hse.ru/en/staff/kirill.bursov", date: "2026" },
             { url: "https://i.postimg.cc/fLdM3Zx4/DSC01546.webp", link: "https://spb.hse.ru/soc/neuroling/psylingschool/program", date: "2026" }
         ]
     },
